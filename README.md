@@ -10,7 +10,7 @@ To configure, add the following to your Waybar config (`$HOME/.config/waybar/con
     "custom/updates": {
     "exec": "bash $HOME/.config/waybar/scripts/checkupdates.sh", // <--- path to script
     "on-click-right": "bash $HOME/.config/waybar/scripts/checkupdates.sh", // refresh on right click
-    "on-click-middle": "swaymsg exec '$term -e sudo dnf update'", // update on middle click    
+    "on-click-middle": "swaymsg exec '$term -e sudo dnf update --refresh'", // update on middle click    
     "interval": 900, // refresh every 15 minutes
     "return-type": "json",
     "format": "{icon}",
